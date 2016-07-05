@@ -25,6 +25,7 @@ public class P4_2_2 {
 		
 		num >>= 2; // move to the right three times
 		System.out.println(num & 1); // print the fifth bit
+		
 	}
 
 }
