@@ -29,31 +29,15 @@
         android:layout_marginStart="32dp"
         android:onClick="onPicture2Clicked" />
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="가수 1"
-        android:id="@+id/radioButton"
-        android:layout_below="@+id/imageView"
-        android:layout_alignStart="@+id/imageView" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="가수 2"
-        android:id="@+id/radioButton2"
-        android:layout_below="@+id/imageView"
-        android:layout_alignStart="@+id/imageView2" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="설정"
         android:id="@+id/button"
         android:onClick="onButton1Clicked"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/imageView"
-        android:layout_marginBottom="96dp" />
+        android:layout_below="@+id/editText2"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="32dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -61,21 +45,56 @@
         android:text="닫기"
         android:id="@+id/button2"
         android:layout_alignTop="@+id/button"
-        android:layout_alignStart="@+id/radioButton2" />
+        android:layout_alignStart="@+id/imageView2" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
         android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/radioButton"
-        android:layout_alignEnd="@+id/imageView2" />
+        android:layout_centerHorizontal="true" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/editText2"
         android:layout_below="@+id/editText"
         android:layout_alignStart="@+id/editText"
         android:layout_alignEnd="@+id/editText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="false">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가수 1"
+                android:id="@+id/radioButton"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="46dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가수 2"
+                android:id="@+id/radioButton2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="86dp"
+                android:layout_gravity="right" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
 </RelativeLayout>

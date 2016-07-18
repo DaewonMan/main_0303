@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     /*
@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
     Button button12;
     */
     Button button13;
-    EditText editText;
-    EditText editText2;
+    TextView textView;
+    TextView textView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,63 +31,63 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         button13 = (Button)findViewById(R.id.button13); // id 참조
-        editText = (EditText)findViewById(R.id.editText);
-        editText2 = (EditText)findViewById(R.id.editText2);
+        textView = (TextView)findViewById(R.id.textView);
+        textView2 = (TextView)findViewById(R.id.textView2);
 
         /* 닫기 함수 */
         button13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                return ;
+                System.exit(0);
             }
         });
     }
-    public void onButton1Clicked(){
-        editText.setText("행 인덱스:0");
-        editText2.setText("열 인덱스:0");
+    public void onButton1Clicked(View v){
+        textView.setText("행 인덱스:0");
+        textView2.setText("열 인덱스:0");
     }
-    public void onButton2Clicked(){
-        editText.setText("행 인덱스:0");
-        editText2.setText("열 인덱스:1");
+    public void onButton2Clicked(View v){
+        textView.setText("행 인덱스:0");
+        textView2.setText("열 인덱스:1");
     }
-    public void onButton3Clicked(){
-        editText.setText("행 인덱스:0");
-        editText2.setText("열 인덱스:2");
+    public void onButton3Clicked(View v){
+        textView.setText("행 인덱스:0");
+        textView2.setText("열 인덱스:2");
     }
-    public void onButton4Clicked(){
-        editText.setText("행 인덱스:1");
-        editText2.setText("열 인덱스:0");
+    public void onButton4Clicked(View v){
+        textView.setText("행 인덱스:1");
+        textView2.setText("열 인덱스:0");
     }
-    public void onButton5Clicked(){
-        editText.setText("행 인덱스:1");
-        editText2.setText("열 인덱스:1");
+    public void onButton5Clicked(View v){
+        textView.setText("행 인덱스:1");
+        textView2.setText("열 인덱스:1");
     }
-    public void onButton6Clicked(){
-        editText.setText("행 인덱스:1");
-        editText2.setText("열 인덱스:2");
+    public void onButton6Clicked(View v){
+        textView.setText("행 인덱스:1");
+        textView2.setText("열 인덱스:2");
     }
-    public void onButton7Clicked(){
-        editText.setText("행 인덱스:2");
-        editText2.setText("열 인덱스:0");
+    public void onButton7Clicked(View v){
+        textView.setText("행 인덱스:2");
+        textView2.setText("열 인덱스:0");
     }
-    public void onButton8Clicked(){
-        editText.setText("행 인덱스:2");
-        editText2.setText("열 인덱스:1");
+    public void onButton8Clicked(View v){
+        textView.setText("행 인덱스:2");
+        textView2.setText("열 인덱스:1");
     }
-    public void onButton9Clicked(){
-        editText.setText("행 인덱스:2");
-        editText2.setText("열 인덱스:2");
+    public void onButton9Clicked(View v){
+        textView.setText("행 인덱스:2");
+        textView2.setText("열 인덱스:2");
     }
-    public void onButton10Clicked(){
-        editText.setText("행 인덱스:3");
-        editText2.setText("열 인덱스:0");
+    public void onButton10Clicked(View v){
+        textView.setText("행 인덱스:3");
+        textView2.setText("열 인덱스:0");
     }
-    public void onButton11Clicked(){
-        editText.setText("행 인덱스:3");
-        editText2.setText("열 인덱스:1");
+    public void onButton11Clicked(View v){
+        textView.setText("행 인덱스:3");
+        textView2.setText("열 인덱스:1");
     }
-    public void onButton12Clicked(){
-        editText.setText("행 인덱스:3");
-        editText2.setText("열 인덱스:2");
+    public void onButton12Clicked(View v){
+        textView.setText("행 인덱스:3");
+        textView2.setText("열 인덱스:2");
     }
 }

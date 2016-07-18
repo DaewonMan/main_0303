@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                return; //프로그램 종료?
+                System.exit(0); // 프로그램 종료
             }
         });
 
